@@ -1,13 +1,11 @@
 const Handlebars = require('handlebars');
 
-// Пример данных о проектах
 const projectDetails = [
     { name: 'Проект 1', description: 'Описание проекта 1' },
     { name: 'Проект 2', description: 'Описание проекта 2' },
     { name: 'Проект 3', description: 'Описание проекта 3' }
 ];
 
-// Компиляция шаблона Handlebars
 const source = `
 <table width="80%" border="0" cellspacing="0" cellpadding="0" class="full-wrap">
     {{#each projectDetails}}
@@ -47,7 +45,6 @@ const source = `
 
 const template = Handlebars.compile(source);
 
-// Подставляем данные в шаблон и генерируем HTML
 const html = template({ projectDetails });
 
 console.log(html);
