@@ -10,7 +10,7 @@ const User = sequelize.define('user',{
 })
 
 const Shablon = sequelize.define("shablon", {
-  id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: tru},
+  id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
   name: {type: DataTypes.STRING},
   code: {type: DataTypes.STRING},
 })
